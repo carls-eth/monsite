@@ -1,0 +1,334 @@
+/*La  police du texte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Police et couleur du corps */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7; 
+    color: #333; 
+    margin: 0;
+    padding: 0; 
+}
+
+/* Autre police  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+/* Style du logo texte */
+.text-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0; 
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #ccc; 
+}
+
+.main-logo {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 48px;
+    font-weight: 700;
+    color: #333333; 
+    text-transform: uppercase; 
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+/* navigation / menu */
+nav {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #6a8a82;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #536f6e;
+}
+
+/* Barre de recherche et Panier */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+.search-bar {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+}
+
+.cart {
+    font-size: 18px;
+    color: #8da7a9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cart:hover {
+    color: #536f6e;
+}
+
+/* Style du header */
+header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* texte sous le header */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: bold;
+    background-color: #e4e2dd;
+    margin: 0;
+    padding: 10px;
+}
+
+/* colonnes */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*  taille des images */
+.column img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+
+/* le footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.main-logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* Media query pour les téléphones */
+@media screen and (max-width: 768px) {
+    .main-logo {
+        font-size: 32px; /* Réduire la taille de la police sur les téléphones */
+        letter-spacing: 1px; /* Ajuster l'espacement pour s'adapter à l'écran */
+    }
+
+    /* Ajuste les tailles de texte dans d'autres éléments */
+    header h1 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+    
+    /* Réduire la taille de la barre de recherche */
+    .search-bar {
+        width: 150px;
+        font-size: 14px;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+footer .footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+footer .footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .footer-section a:hover {
+    color: #007bff;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #007bff;
+}
+
+footer .footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-section form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+footer .footer-section form button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .footer-section form button:hover {
+    background-color: #0056b3;
+}
+
+footer .footer-credits {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer-section {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer .footer-section {
+        width: 100%;
+    }
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-logo {
+    width: 200px; /* Ajuste la taille à peu près équivalente à celle du texte */
+    height: auto;
+}

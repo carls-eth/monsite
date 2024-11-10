@@ -1,0 +1,343 @@
+/* Importation de la police Roboto depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* --- HEADER --- */
+header {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    color: #000;
+    border-bottom: 2px solid #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.cart {
+    flex: 0 1 auto;
+    text-align: right;
+}
+
+.cart a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* FIL D'ARIANE */ 
+.breadcrumb {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #d2b48c;
+}
+
+.breadcrumb span {
+    color: #333;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+/* --- SECTION PRODUIT --- */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Partie Image */
+.product-image {
+    flex: 1;
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 auto;
+}
+
+/* Partie Information (Texte, Quantité, Ajouter au Panier) */
+.product-info {
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid #ccc; /* Séparation entre l'image et les informations */
+    background-color: #f9f9f9; /* Fond clair pour contraster avec l'image */
+    border-radius: 8px;
+}
+
+/* Style du titre */
+.product-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Style de la description */
+.product-description {
+    font-size: 16px;
+    color: #666;
+    text-align: justify;
+}
+
+/* Style pour le bouton "Voir plus" */
+.product-description details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #d2b48c;
+}
+
+.product-description details summary:hover {
+    color: #b08c60;
+}
+
+/* Quantité et Ajouter au Panier */
+.quantity-cart {
+    margin-top: 20px;
+}
+
+.quantity-cart label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.quantity-cart input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    margin-top: 20px;
+}
+
+.add-to-cart button {
+    background-color: #d2b48c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart button:hover {
+    background-color: #b08c60;
+}
+
+/* --- Mobile Styles --- */
+@media screen and (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .product-image img {
+        max-width: 80%;
+    }
+
+    .product-info {
+        width: 100%;
+        padding: 20px;
+        border-left: none;
+    }
+}
+
+/* footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+footer .footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+footer .footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .footer-section a:hover {
+    color: #007bff;
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #007bff;
+}
+
+footer .footer-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footer-section form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+footer .footer-section form button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer .footer-section form button:hover {
+    background-color: #0056b3;
+}
+
+footer .footer-credits {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    footer .footer-section {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer .footer-section {
+        width: 100%;
+    }
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-logo {
+    width: 200px; 
+    height: auto;
+}
+
+/* --- Effet de surbrillance beige sur le texte au survol --- */
+footer a:hover {
+    color: #d2b48c; /* Texte en beige au survol */
+    font-weight: bold; /* Rendre le texte en gras au survol */
+}
+/* --- acceuil et panier toujours en gras --- */
+header nav a {
+    font-weight: bold; 
+}
+
+/* --- Effet sur l'acceuil et le panier--- */
+header nav a:hover {
+    color: #d2b48c; /* Beige */
+    transform: scale(1.1); /* Effet d'agrandissement */
+    transition: transform 0.3s ease, color 0.3s ease; /* transition pour effets */
+}
